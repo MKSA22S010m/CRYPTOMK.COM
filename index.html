@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Crypto Dashboard</h1>
+            <button id="theme-toggle">Toggle Dark Mode</button>
+            <input type="text" id="search" placeholder="Search for a coin...">
+        </header>
+        <main>
+            <div id="latest-update">Last Updated: <span id="update-time">-</span></div>
+            <div id="live-prices"></div>
+            <div id="chart-container">
+                <canvas id="historical-chart"></canvas>
+            </div>
+            <div id="prediction-container">
+                <h2>Price Predictions</h2>
+                <canvas id="prediction-chart"></canvas>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
